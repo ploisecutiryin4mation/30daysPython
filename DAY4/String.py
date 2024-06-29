@@ -113,3 +113,12 @@ web_tech = ['HTML', 'CSS', 'JavaScript', 'React']
 result = ' '.join(web_tech)
 print(result) # 'HTML CSS JavaScript React'
 
+#title() trả về những chữ cái đầu được viết hoa
+Loi = "phuoc loi dep trai"
+print(Loi.title())
+
+#replace(): Thay thế chuỗi con bằng một chuỗi đã cho
+Loi = " Bich mai dep gai"
+print(Loi.replace('Bich mai','loi'))
+
+
