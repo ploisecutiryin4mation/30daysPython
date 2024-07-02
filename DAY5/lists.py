@@ -150,5 +150,40 @@ num2= [4, 5, 6]
 print(num1.index(1))
 print(num2.index(4))
 
+#đảo ngược danh sách
+fruits = ['banana', 'orange', 'mango', 'lemon']
+fruits.reverse()
+print(fruits) # ['lemon', 'mango', 'orange', 'banana']
+ages = [22, 19, 24, 25, 26, 24, 25, 24]
+ages.reverse()
+print(ages) # [24, 25, 24, 26, 25, 24, 19, 22]
 
+
+#sắp xếp item trong list
+#Để sắp xếp danh sách, chúng ta có thể sử dụng phương thức Sort() hoặc các hàm dựng sẵn được sắp xếp() . Phương thức Sort () sắp xếp lại các mục trong danh sách theo thứ tự tăng dần và sửa đổi danh sách gốc. Nếu một đối số của phương thức Sort() Reverse bằng true, nó sẽ sắp xếp danh sách theo thứ tự giảm dần.
+#sort()
+
+# syntax
+lst = ['item1', 'item2']
+lst.sort()                # ascending
+lst.sort(reverse=True)    # descending
+fruits = ['banana', 'orange', 'mango', 'lemon']
+fruits.sort()
+print(fruits)             # sorted in alphabetical order, ['banana', 'lemon', 'mango', 'orange']
+fruits.sort(reverse=True)
+print(fruits) # ['orange', 'mango', 'lemon', 'banana']
+ages = [22, 19, 24, 25, 26, 24, 25, 24]
+ages.sort()
+print(ages) #  [19, 22, 24, 24, 24, 25, 25, 26]
+
+ages.sort(reverse=True)
+print(ages) #  [26, 25, 25, 24, 24, 24, 22, 19]
+
+#sorted(): trả về danh sách đã sắp xếp mà không sửa đổi danh sách gốc Ví dụ:
+fruits = ['banana', 'orange', 'mango', 'lemon']
+print(sorted(fruits))   # ['banana', 'lemon', 'mango', 'orange']
+# Reverse order
+fruits = ['banana', 'orange', 'mango', 'lemon']
+fruits = sorted(fruits,reverse=True)
+print(fruits)     # ['orange', 'mango', 'lemon', 'banana']
 

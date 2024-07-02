@@ -57,7 +57,6 @@ print("sau khi noi 2 tuple voi nhau",sum_tuple)
 #xoa tuple 
 del tuple2
 del tuple3
-print("tuple sau khi xoa",tuple2)
 
 
 
